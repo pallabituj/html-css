@@ -2,11 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Example of CSS3 align-content property</title>
+    <style>
+        .flex-container{
+            height: 300px;
+            width: 200px;
+            font-size: 32px;
+            border: 1px solid black;
+            /* Safari */
+            display: -webkit-flex;
+            -webkit-flex-flow: row wrap;
+            -webkit-align-content:
+            Space-arouund;
+            /* Standaed syntax */
+            display: flex;
+            flex-flow : row wrap;
+            align-content : space-around;
+        }
+        .flex-container div {
+            height: 75px;
+            width: 200px;
+        }
+        .item1 {
+            background: #7ed636;
+        }
+        .item2 {
+            background: #2f97ff;
+        }
+        .item3 {
+            background: #e84d51;
+        }
+    </style>
 </head>
 <body>
-    <h5 this is my 5th programming></h5>
+    <div class="flex-container">
+        <div class="item1">1.Namaz</div>
+        <div class="item2">2.Rozza</div>
+        <div class="item3">3.Sadaka</div>
+    </div>
 </body>
 </html>
