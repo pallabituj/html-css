@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1{
+
+            counter-reset: category;
+        }
+        h1:before{
+            counter-increment: section;
+            content: "section" counter(section) ". ";
+        }
+        h2:before{
+            counter-increment: category;
+            content: counter(section) ".";
+            counter (category) " ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Tuitorial</h1>
+    <h2>HTML Tuitorial</h2>
+    <h2>CSS Tuitorial</h2>
+    <h1>Reference</h1>
+    <h2>HTMl Tags</h2>
+    <h2>CSS Propertice</h2>
+    <p><b>Note:</b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga similique error libero velit, nobis eum vero reiciendis id quia nulla incidunt doloribus aliquam odit voluptates consectetur, provident nisi? Iure labore iste obcaecati? Eligendi, vel quam consectetur veniam aspernatur accusantium doloribus, minima nostrum, laborum et tempore nulla itaque quia sapiente optio.</p>
+    <code>&1t; !DOCTYPE&gt;</code>  is specified.
+</body>
+</html>
